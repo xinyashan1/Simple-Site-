@@ -1,0 +1,158 @@
+/*responsive web layout*/
+
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightyellow;
+}
+
+header {
+    height: 5em;
+    padding: 2em
+    
+}
+
+nav {
+    background-color: #eba8c4;
+}
+
+
+main {
+    color: rgb(128, 110, 204); 
+    
+}
+
+
+
+section {
+    padding: 1em 2em;
+}
+
+
+
+aside {
+    color: rgb(218, 165, 174); 
+    
+}
+
+article {
+color: lightpink; 
+    
+}
+
+
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photoColumn {
+    flex: 50%;
+    padding: 1% .5%;
+}
+.photoColumn img {
+    width: 100%;
+}
+footer {
+    height: 3em;
+    background-color: #badcf3;
+    color: cornsilk;
+    clear: left;
+}
+div {
+    box-sizing: border-box;
+}
+/* ------- Mobile Phone ------- */
+@media only screen and (max-width: 600px){
+    main {
+        width: 100%;
+        background-color: rgb(187, 163, 231);
+    }
+       .specials {
+        width: 100%;
+    
+    }
+    .mainContent {
+        width: 100%;
+    }
+    .navBar {
+        color: rgb(226, 151, 164); 
+        
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        text-align: center;
+        line-height: 2.5em;
+        color: cornsilk;
+        text-decoration: none;
+        border-bottom: 1px solid cornsilk; 
+    }
+    .navBar a:hover {
+        background-color: #ecabc4;
+        color: rgb(235, 199, 230);
+    }
+    .photoColumn {
+        flex: 100%;
+    }
+}
+/* ------- End of Mobile Phone ------- */
+/* ------- Tablet and IPad ------- */
+@media only screen and (min-width: 601px){
+    main {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #c1bbec;
+    }
+       .specials {
+        width: 20%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 80%;
+        float: left;
+    }
+    .navBar {
+        overflow: hidden;
+        padding: 0 10%;
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        width: 25%;
+        float: left;
+        text-align: center;
+        line-height: 2em;
+        color: rgb(226, 210, 146);
+        text-decoration: none; 
+    }
+    .navBar a:hover {
+        background-color: #abd2ec;
+        color: rgb(191, 170, 214);
+    }
+    .photoColumn {
+        width: 50%;
+    }
+}
+/* ------- End of Tablet and IPad ------- */
+/* ------- Desktop ------- */
+@media only screen and (min-width: 1000px){
+    main {
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: hsl(307, 67%, 86%);
+    }
+    .specials {
+        width: 30%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 70%;
+        float: left;
+    }
+    .photoColumn {
+        flex: 50%;
+    }
+    
+}
+/* ------- End of Desktop ------- */
